@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Khánh Tùng</title>
+    <link href="../img/tung5.png" rel="shortcut icon"/>
+    <link rel="stylesheet" href="../css/yokatta.css">
+    <link rel="stylesheet" href="../css/yokatta1.css">
+
+</head>
+<body>
+<div class="contariner-all">
+    <div class="loggin">
+        <div class="img-login">
+            <img class="img-trang1" src="../img/img12.png" alt="">
+        </div>
+        <div class="title">
+            <h1 class="h1-ttt" > xin chào mình là Tùng đây  </h1>
+            <p class="tt-trang"> Mình biết bạn là một cô gái rất xinh đẹp và thân thiện,
+                nhưng mình vẫn có một thắc mắc không biết bạn có thể trả lời giúp mk ko vậy
+            </p>
+            <div href="" class="trang-xem"  onclick="enableAutoplay()">
+                tất nhiên rồi
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+  <div class="tun2">
+      <div class="tung">
+          <div class="trangchu-all">
+              <div class="tt-trangchu">
+                  <h1 class="h1trangchu">
+                      bạn có yêu mình không vậy ? trả lời thật lòng nha ! </br>
+                      <!--                nếu có hãy tặng mình một món quà nhân ngày sinh nhật-->
+                  </h1>
+              </div>
+              <div class="img-trangchu">
+                  <img class="imgtrang3" src="../img/noel14.gif" height="150px" width="150px"/>
+                  <img class="imgtrang3" src="../img/noel11.gif" height="150px" width="150px"/>
+                  <img class="imgtrang3" src="../img/noel6.gif" height="150px" width="150px"/>
+              </div>
+              <div class="co-khong">
+                  <a href="index3.html" class="co"  >Có</a>
+                  <!--            <div class="co2"id="test2">Chả biết</div>-->
+                  <div class="khong" id="test">Không</div>
+              </div>
+          </div>
+          <div class="nhac">
+              <audio controls  autoplay loop class="mp3" id="myVideo">
+                  <source  src="../img/blueming.mp3">
+              </audio>
+          </div>
+          <div class="tim">
+              <div class="heart">
+
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    var vid = document.getElementById("myVideo");
+    function enableAutoplay() {
+        vid.autoplay = true;
+        vid.load();
+    }
+    $(document).ready(function () {
+
+        $('.trang-xem').click(function (){
+
+            $('.contariner-all').hide();
+            $('.tun2').show();
+        })
+
+        $('#test').mouseover(function () {
+            var docHeight = $(document).height(),
+                docWidth = $(document).width(),
+                $div = $('#test'),
+                divWidth = $div.width(),
+                divHeight = $div.height(),
+                heightMax = docHeight - 100,
+                widthMax = docWidth - 100;
+
+            $div.css({
+                left: Math.floor(Math.random() * 600),
+                top: Math.floor(Math.random() * 650)
+            });
+        });
+
+        if ($(window).width() <= 480) {
+            $('#test').click(function () {
+                var docHeight = $(document).height(),
+                    docWidth = $(document).width(),
+                    $div = $('#test'),
+                    divWidth = $div.width(),
+                    divHeight = $div.height(),
+                    heightMax = docHeight + 100,
+                    widthMax = docWidth + 100;
+
+                $div.css({
+                    left: Math.floor(Math.random() * 300),
+                    top: Math.floor(Math.random() * 350)
+                });
+            });
+            // $('#tes
+        };
+
+    })
+
+
+
+
+
+
+</script>

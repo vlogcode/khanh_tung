@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/yokatta.css">
+    <link rel="stylesheet" href="../css/yokatta1.css">
+
+</head>
+<body>
+<div class="tung">
+    <div class="trangchu-all">
+        <div class="tt-trangchu">
+            <h1 class="h1trangchu">
+                bạn có yêu mình không vậy ? trả lời thật lòng nha ! </br>
+                <!--                nếu có hãy tặng mình một món quà nhân ngày sinh nhật-->
+            </h1>
+        </div>
+        <div class="img-trangchu">
+            <img class="imgtrang3" src="../img/tung5.png" height="150px" width="150px"/>
+        </div>
+        <div class="co-khong">
+            <div href="" class="co" onclick="enableAutoplay()" >Có</div>
+            <!--            <div class="co2"id="test2">Chả biết</div>-->
+            <div class="khong" id="test">Không</div>
+        </div>
+    </div>
+    <div class="nhac">
+        <audio controls   loop class="mp3" id="myVideo">
+            <source  src="../img/blueming.mp3">
+        </audio>
+    </div>
+    <div class="tim">
+        <div class="heart">
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    var vid = document.getElementById("myVideo");
+    function enableAutoplay() {
+        vid.autoplay = true;
+        vid.load();
+    }
+    $(document).ready(function () {
+
+
+
+
+        $('#test').mouseover(function () {
+            var docHeight = $(document).height(),
+                docWidth = $(document).width(),
+                $div = $('#test'),
+                divWidth = $div.width(),
+                divHeight = $div.height(),
+                heightMax = docHeight - 100,
+                widthMax = docWidth - 100;
+
+            $div.css({
+                left: Math.floor(Math.random() * 600),
+                top: Math.floor(Math.random() * 650)
+            });
+        });
+
+        if ($(window).width() <= 480) {
+            $('#test').click(function () {
+                var docHeight = $(document).height(),
+                    docWidth = $(document).width(),
+                    $div = $('#test'),
+                    divWidth = $div.width(),
+                    divHeight = $div.height(),
+                    heightMax = docHeight + 100,
+                    widthMax = docWidth + 100;
+
+                $div.css({
+                    left: Math.floor(Math.random() * 300),
+                    top: Math.floor(Math.random() * 350)
+                });
+            });
+            // $('#tes
+        };
+
+    })
+
+
+
+
+
+
+</script>
